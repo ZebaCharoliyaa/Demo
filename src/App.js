@@ -4,7 +4,7 @@ import React from 'react'
 import Screens from './screens/Screens'
 // import Imagefile from './screens/Imagefile'
 // import LoginForm from './screens/LoginForm'
-// import LoginDemo from './screens/LoginDemo'
+import LoginDemo from './screens/LoginDemo'
 // import ImageFile from './screens/ImageFile'
 // import Demo from './screens/Demo'
 import Fletlist from './screens/Fletlist'
@@ -16,10 +16,10 @@ export default function App() {
     // </SafeAreaView>
     // <Screens/>
     // <LoginForm/>
-    // <LoginDemo/>
+    <LoginDemo/>
     // <ImageFile/>
     // <Demo/>
-    <Fletlist/>
+    // <Fletlist/>
   )
 }
 
