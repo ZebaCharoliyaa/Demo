@@ -24,9 +24,10 @@ const Project = () => {
             image:require('./img/bali.jpeg'),
         },
     ];
-    const Item = ({title}) => {
+    const Item = ({title,image}) => {
         return(
-            <View style={styles.item}>
+            <View >
+            <Image source={image} style={styles.item}/>
             <Text style={styles.title}>{title}</Text>
             </View>
         )
@@ -40,7 +41,7 @@ const Project = () => {
        
        <FlatList horizontal={true} showsHorizontalScrollIndicator={false}
        data={Data}
-       renderItem={({item}) => <Item title={item.title}/>}
+       renderItem={({item}) => <Item title={item.title} image={item.image}/>}
        keyExtractor={item => item.id}/>
         </View>
         <View>
@@ -76,7 +77,8 @@ const styles = StyleSheet.create({
         color:"#000",
     },
     title:{
-        marginTop:250,
+        marginTop:-40,
+        marginLeft:30,
         color:'#000',
         fontWeight:'600',
         fontSize:22,
